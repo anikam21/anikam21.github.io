@@ -6,8 +6,31 @@
     <title>Projects - Anika Marzia</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero {
+            background: #333;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -28,11 +51,19 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>A showcase of my recent work and accomplishments.</p>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="container my-5">
-        <h1 class="text-center">My Projects</h1>
-        <div class="row mt-4">
-            <div class="col-md-4">
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Banking Application</h5>
@@ -41,7 +72,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">3D Printing Business App</h5>
@@ -50,7 +82,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Face Detection App</h5>
@@ -63,10 +96,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer>
         <p>&copy; 2024 Anika Marzia. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
