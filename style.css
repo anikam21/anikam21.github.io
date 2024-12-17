@@ -43,9 +43,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 550px;
-    padding: 3rem 0; /* Consistent padding */
-    margin-top: 20px; /* Pushes hero card down slightly */
+    min-height: 500px; /* Smaller height */
+    padding: 2rem 0;
+    margin-top: 0; /* Reset margin */
 }
 
 /* Transparent Card */
@@ -53,50 +53,44 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
-    background: rgba(0, 0, 0, 0.4); /* Slightly transparent */
+    padding: 2rem; /* Smaller padding */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 1200px;
+    max-width: 1000px; /* Reduce max width */
     width: 90%;
-    margin: 0 auto; /* Center the card */
+    margin: 0 auto;
 }
 
 /* Text Styling */
 .hero-text {
     flex: 1;
     text-align: left;
-}
-
-.hero-intro {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    max-width: 45%; /* Constrain text width */
 }
 
 .hero-name {
-    font-size: 3.5rem; /* Larger name */
-    font-weight: bold;
+    font-size: 3rem; /* Adjust name size */
     margin-bottom: 0.5rem;
 }
 
 .hero-role {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjust role size */
     margin-bottom: 1rem;
 }
 
 /* Memoji Image */
 .memoji-img {
     flex: 1;
-    max-width: 400px; /* Larger image */
+    max-width: 300px; /* Reduce max image size */
     height: auto;
-    transform: translateY(30px); /* Slight pop-up effect */
+    transform: translateY(10px); /* Subtle pop-up */
 }
 
-/* Projects Section */
+/* Projects Section Spacing */
 #projects {
-    margin-top: 50px; /* Adjust spacing to push projects further down */
+    margin-top: 20px; /* Add spacing */
     padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .project-card {
