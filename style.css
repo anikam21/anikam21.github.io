@@ -22,22 +22,24 @@ body {
 
 /* Hero Section */
 #home {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1rem;
-    min-height: 100vh;
-    background: transparent;
+    min-height: 100vh; /* Full screen height */
+    padding: 3rem;
 }
 
-/* Transparent Hero Card */
+/* Transparent Card */
 .hero-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.5); /* Transparent background */
     border-radius: 15px;
-    padding: 2rem;
+    padding: 3rem;
     max-width: 1200px;
     width: 90%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -50,7 +52,7 @@ body {
 }
 
 .hero-intro {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -68,10 +70,13 @@ body {
 
 /* Right Side: Memoji Image */
 .memoji-img {
-    max-width: 300px; /* Adjust size as needed */
+    flex: 1; /* Takes equal space */
+    max-width: 350px; /* Adjust image size */
     height: auto;
-    transform: translateY(20px); /* Slight pop-up effect */
+    object-fit: contain;
+    transform: translateY(20px); /* Pop-out effect */
 }
+
 
 /* Projects Section */
 .project-card {
