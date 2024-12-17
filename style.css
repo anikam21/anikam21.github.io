@@ -80,7 +80,7 @@ body {
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
     padding: 1rem;
     color: white;
     text-align: center;
@@ -99,11 +99,11 @@ section {
 
 .navbar .navbar-brand, 
 .navbar .nav-link {
-    color: #000000 !important; /* Black text */
+    color: black !important; /* Black text */
     font-weight: bold; /* Optional: Makes text bold */
     transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #ff4971 !important; /* Accent pink on hover */
+    color: #c7b9bc !important; /* Accent pink on hover */
 }
