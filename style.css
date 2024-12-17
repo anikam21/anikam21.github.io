@@ -100,10 +100,18 @@ section {
 .navbar .navbar-brand, 
 .navbar .nav-link {
     color: black !important; /* Black text */
-    font-weight: bold; /* Optional: Makes text bold */
+    font-weight: bold; 
     transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
     color: #ff4971 !important; /* Accent pink on hover */
+}
+
+/* Memoji Styling */
+.memoji-img {
+    max-width: 150px; /* Adjust size as needed */
+    margin-bottom: 1rem;
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
