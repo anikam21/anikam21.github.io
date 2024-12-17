@@ -120,6 +120,23 @@ body {
     transform: scale(1.05);
 }
 
+/* Skills Section Teaser */
+#skills-preview {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 3rem auto;
+    max-width: 1000px;
+}
+
+#skills-preview i {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
 /* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
@@ -128,8 +145,4 @@ footer {
     padding: 1rem;
 }
 
-/* skills teaser*/
-#skills-teaser {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
+
