@@ -82,7 +82,7 @@ body {
 footer {
     background-color: white;
     padding: 1rem;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 2rem;
 }
@@ -94,7 +94,7 @@ section {
 /* Custom Navbar Color */
 .navbar {
     background-color: #ffffff !important; /* White background */
-    border-bottom: 1px solid #e0e0e0; /* Subtle bottom border */
+    border-bottom: 1px solid #000000; /* Subtle bottom border */
 }
 
 .navbar .navbar-brand, 
@@ -105,5 +105,5 @@ section {
 }
 
 .navbar .nav-link:hover {
-    color: #c7b9bc !important; /* Accent pink on hover */
+    color: #ff4971 !important; /* Accent pink on hover */
 }
