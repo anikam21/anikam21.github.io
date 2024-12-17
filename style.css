@@ -93,16 +93,17 @@ section {
 
 /* Custom Navbar Color */
 .navbar {
-    background: linear-gradient(to right, #4e154b, #ff4971) !important; /* Gradient */
-    border-bottom: 2px solid #ff4971; /* Accent line */
+    background-color: #ffffff !important; /* White background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle bottom border */
 }
 
-.navbar .nav-link, .navbar-brand {
-    color: #ffffff !important; /* White text */
+.navbar .navbar-brand, 
+.navbar .nav-link {
+    color: #000000 !important; /* Black text */
+    font-weight: bold; /* Optional: Makes text bold */
     transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #ffd1dc !important; /* Light pink on hover */
+    color: #ff4971 !important; /* Accent pink on hover */
 }
-
