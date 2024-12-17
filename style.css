@@ -26,45 +26,44 @@ body {
     }
 }
 
-/* Hero Section Styling */
+/* Hero Section */
 #home {
     background-color: #000000; /* Solid black background */
-    color: #ffffff; /* White text for contrast */
-    padding: 3rem 0; /* Add spacing around the hero section */
-    position: relative;
-    overflow: hidden; /* Ensures no scrollbars for positioning */
+    color: #ffffff;
+    padding: 3rem 0; /* Vertical spacing */
 }
 
 .hero-card {
-    position: relative;
-    padding: 2rem 0;
+    max-width: 1200px; /* Restrict card width */
+    margin: 0 auto; /* Center the card */
+    padding: 2rem; /* Padding inside the card */
     text-align: left;
 }
 
-/* Text Styling */
 .hero-intro {
-    font-size: 1.2rem; /* Smaller for the "Hi 👋 I am" text */
-    color: #f0f0f0; /* Slightly lighter white for subtle effect */
+    font-size: 1.2rem; /* Smaller text for "Hi 👋 I am" */
+    color: #f0f0f0;
     margin-bottom: 0.5rem;
 }
 
 .hero-name {
-    font-size: 3rem; /* Larger font size for the name */
+    font-size: 3rem; /* Large name */
     font-weight: bold;
-    color: #ffffff; /* Pure white */
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .hero-role {
-    font-size: 1.5rem; /* Medium size for the job title */
-    color: #f0f0f0; /* Lighter color to differentiate */
+    font-size: 1.5rem; /* Job title smaller than name */
+    color: #dcdcdc;
     margin-bottom: 1rem;
 }
 
 .lead {
-    font-size: 1rem; /* Normal size for the description */
+    font-size: 1rem;
     color: #dcdcdc;
 }
+
 
 .btn-primary {
     background-color: #007bff;
@@ -137,11 +136,10 @@ section {
 
 /* Memoji Styling */
 .memoji-img {
-    max-width: 350px; /* Adjust size to make it large */
+    max-width: 300px; /* Fixed size for Memoji */
     height: auto;
-    position: absolute; /* Position it relative to the column */
-    bottom: -30px; /* Pull it out of the bottom */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Fine-tune centering */
-    z-index: 2; /* Ensure it's above other elements */
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
