@@ -28,47 +28,45 @@ body {
 
 /* Hero Section */
 .hero-card {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
     border-radius: 10px;
     padding: 2rem;
     margin: 2rem auto;
-    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    color: white;
+    text-align: center;
     max-width: 800px;
+    color: white;
 }
 
-/* Project Cards */
+/* Projects Section */
 .project-card {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
-    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparency for project cards */
+    color: white;
     border-radius: 8px;
     padding: 1.5rem;
-    text-align: left;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .project-card a {
+    color: #ffcc00;
     text-decoration: none;
-    color: #1e90ff;
 }
 
 .project-card a:hover {
     text-decoration: underline;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
 /* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 1rem 0;
+    padding: 1rem;
+    color: white;
+    text-align: center;
 }
