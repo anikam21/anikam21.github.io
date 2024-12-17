@@ -41,6 +41,31 @@ body {
     text-align: left;
 }
 
+/* Text Styling */
+.hero-intro {
+    font-size: 1.2rem; /* Smaller for the "Hi 👋 I am" text */
+    color: #f0f0f0; /* Slightly lighter white for subtle effect */
+    margin-bottom: 0.5rem;
+}
+
+.hero-name {
+    font-size: 3rem; /* Larger font size for the name */
+    font-weight: bold;
+    color: #ffffff; /* Pure white */
+    margin-bottom: 0.5rem;
+}
+
+.hero-role {
+    font-size: 1.5rem; /* Medium size for the job title */
+    color: #f0f0f0; /* Lighter color to differentiate */
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1rem; /* Normal size for the description */
+    color: #dcdcdc;
+}
+
 .btn-primary {
     background-color: #007bff;
     border: none;
