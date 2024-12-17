@@ -1,14 +1,21 @@
-body {
+/* General Reset */
+body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Animated Gradient Background */
+body {
     font-family: Arial, sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color: white;
     text-align: center;
-    height: 100vh;
 }
 
+/* Keyframes for Animation */
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -21,6 +28,34 @@ body {
     }
 }
 
+/* Page Layout */
 header {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+}
+
+h1, h2, p {
+    margin: 0.5rem 0;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 80%;
+    color: #333; /* Dark text for contrast */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
