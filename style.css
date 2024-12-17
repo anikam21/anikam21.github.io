@@ -28,53 +28,82 @@ body {
 
 /* Hero Section */
 #home {
-    background-color: #000000; /* Solid black background */
-    color: #ffffff;
-    padding: 3rem 0; /* Spacing above and below */
-    display: flex; /* Use flexbox for centering */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Gradient Background */
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #ffffff; /* White text */
+    padding: 3rem 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px; /* Set a consistent minimum height */
+    position: relative;
+    min-height: 500px;
+}
+
+/* Animated Gradient Background */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Hero Card */
 .hero-card {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /* Space between text and image */
-    max-width: 1200px; /* Set maximum width */
-    padding: 2rem; /* Consistent padding */
-    margin: 0 auto; /* Center card horizontally */
-    background: none; /* No background color */
+    padding: 2rem;
+    border-radius: 15px; /* Rounded corners */
+    max-width: 1200px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent dark background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 0 auto;
 }
 
-/* Left: Text Content */
+/* Text Content */
 .hero-text {
-    flex: 1; /* Take up equal space */
+    flex: 1;
     text-align: left;
 }
 
 .hero-intro {
-    font-size: 1rem; /* Smaller for "Hi 👋 I am" */
-    color: #f0f0f0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero-name {
-    font-size: 2.8rem; /* Large font size for the name */
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .hero-role {
-    font-size: 1.3rem; /* Medium size for job title */
-    color: #dcdcdc;
+    font-size: 1.5rem;
+    color: #f8f8f8;
     margin-bottom: 1rem;
 }
 
 .lead {
-    font-size: 1rem; /* Description font size */
-    color: #dcdcdc;
+    font-size: 1rem;
+    color: #f8f8f8;
 }
+
+/* Memoji Image */
+.memoji-img {
+    max-width: 350px;
+    height: auto;
+    position: relative;
+    bottom: -20px; /* Slightly pulled out from the bottom */
+    margin-left: 2rem; /* Space between text and image */
+}
+
 
 
 .btn-primary {
@@ -144,12 +173,4 @@ section {
 
 .navbar .nav-link:hover {
     color: #ff4971 !important; /* Accent pink on hover */
-}
-
-/* Right: Memoji Image */
-.memoji-img {
-    flex: 0 0 300px; /* Fixed width for the image */
-    height: auto;
-    position: relative;
-    bottom: -20px; /* Slightly out of the container */
 }
