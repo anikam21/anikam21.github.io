@@ -140,6 +140,36 @@ body {
     align-items: center;
 }
 
+/* Skills Section Styling */
+#skills {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 4rem 2rem;
+    color: #333; /* Dark text for visibility */
+    text-align: center;
+}
+
+#skills h2, #skills p {
+    color: #333; /* Ensure header and paragraph text are dark */
+    margin-bottom: 1rem;
+}
+
+#skills strong {
+    color: #444; /* Slightly darker for emphasis */
+    font-weight: bold;
+}
+
+.skills-bar {
+    background-color: #e0e0e0; /* Light gray background for bars */
+    height: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.skills-bar-fill {
+    background-color: #2196f3; /* Blue fill for progress */
+    height: 100%;
+    border-radius: 5px;
+}
 
 /* For phone responsiveness */
 @media (max-width: 768px) {
