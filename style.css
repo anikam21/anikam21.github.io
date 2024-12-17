@@ -20,38 +20,49 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+/* Navbar */
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #ddd;
+    padding: 1.8rem 0; /* Slightly increase the navbar height */
+    font-size: 1.1rem; /* Slightly increase text size */
+}
+
+.navbar .navbar-brand, 
+.navbar .nav-link {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #ff4971 !important;
+}
+
 /* Hero Section */
 #home {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    margin-top: -100px; /* Pull the card upwards */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
-    padding: 4rem 0; /* Adjust padding for spacing */
-    margin-top: -120px; /* Pull the card upwards */
+    min-height: 500px;
+    padding: 2rem 0; /* Reduce padding */
 }
 
-/* Transparent Card */
 .hero-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    padding: 3rem; /* Adjust padding for spacing */
     background: rgba(0, 0, 0, 0.5); /* Transparent black */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     max-width: 1200px;
     width: 90%;
-    margin: 0 auto; /* Center the card */
 }
 
-/* Text Styling */
 .hero-text {
     flex: 1;
     text-align: left;
-    max-width: 50%; /* Use half of the card width */
 }
 
 .hero-intro {
@@ -71,18 +82,17 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Memoji Image */
 .memoji-img {
     flex: 1;
-    max-width: 400px; /* Larger image size */
+    max-width: 350px; /* Memoji image size */
     height: auto;
-    transform: translateY(30px); /* Pop-out effect */
+    transform: translateY(20px); /* Slight pop-out effect */
 }
 
 /* Move Featured Projects Section Up */
 #projects {
-    margin-top: -80px; /* Move the section closer to the hero card */
-    padding-top: 3rem; /* Add spacing for content inside */
+    margin-top: -50px; /* Move closer to hero section */
+    padding-top: 2rem; /* Add spacing for content inside */
 }
 
 /* Projects Section */
@@ -111,24 +121,6 @@ body {
 .project-card a:hover {
     color: #ffa500;
     transform: scale(1.05);
-}
-
-/* Navbar */
-.navbar {
-    background-color: white !important;
-    border-bottom: 1px solid #ddd;
-    padding: 1.5rem 0; /* Make the navbar slightly bigger */
-    font-size: 1.1rem; /* Slightly increase text size */
-}
-
-.navbar .navbar-brand, 
-.navbar .nav-link {
-    color: black !important;
-    font-weight: bold;
-}
-
-.navbar .nav-link:hover {
-    color: #ff4971 !important;
 }
 
 /* Footer */
