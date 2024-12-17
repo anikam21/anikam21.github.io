@@ -30,7 +30,7 @@ body {
     align-items: center;
     min-height: 600px;
     padding: 4rem 0; /* Adjust padding for spacing */
-    margin-top: -60px; /* Pull the card upwards */
+    margin-top: -120px; /* Pull the card upwards */
 }
 
 /* Transparent Card */
@@ -81,7 +81,7 @@ body {
 
 /* Move Featured Projects Section Up */
 #projects {
-    margin-top: -50px; /* Move the section closer to the hero card */
+    margin-top: -80px; /* Move the section closer to the hero card */
     padding-top: 3rem; /* Add spacing for content inside */
 }
 
