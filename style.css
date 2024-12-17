@@ -30,37 +30,49 @@ body {
 #home {
     background-color: #000000; /* Solid black background */
     color: #ffffff;
-    padding: 3rem 0; /* Vertical spacing */
+    padding: 3rem 0; /* Spacing above and below */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Set a consistent minimum height */
 }
 
+/* Hero Card */
 .hero-card {
-    max-width: 1200px; /* Restrict card width */
-    margin: 0 auto; /* Center the card */
-    padding: 2rem; /* Padding inside the card */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px; /* Set maximum width */
+    padding: 2rem; /* Consistent padding */
+    margin: 0 auto; /* Center card horizontally */
+    background: none; /* No background color */
+}
+
+/* Left: Text Content */
+.hero-text {
+    flex: 1; /* Take up equal space */
     text-align: left;
 }
 
 .hero-intro {
-    font-size: 1.2rem; /* Smaller text for "Hi 👋 I am" */
+    font-size: 1rem; /* Smaller for "Hi 👋 I am" */
     color: #f0f0f0;
-    margin-bottom: 0.5rem;
 }
 
 .hero-name {
-    font-size: 3rem; /* Large name */
+    font-size: 2.8rem; /* Large font size for the name */
     font-weight: bold;
-    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .hero-role {
-    font-size: 1.5rem; /* Job title smaller than name */
+    font-size: 1.3rem; /* Medium size for job title */
     color: #dcdcdc;
     margin-bottom: 1rem;
 }
 
 .lead {
-    font-size: 1rem;
+    font-size: 1rem; /* Description font size */
     color: #dcdcdc;
 }
 
@@ -134,12 +146,10 @@ section {
     color: #ff4971 !important; /* Accent pink on hover */
 }
 
-/* Memoji Styling */
+/* Right: Memoji Image */
 .memoji-img {
-    max-width: 300px; /* Fixed size for Memoji */
+    flex: 0 0 300px; /* Fixed width for the image */
     height: auto;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    bottom: -20px; /* Slightly out of the container */
 }
