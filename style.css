@@ -28,8 +28,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full screen height */
-    padding: 3rem;
+    min-height: 600px;
+    padding: 4rem 0; /* Adjust padding for spacing */
+    margin-top: -60px; /* Pull the card upwards */
 }
 
 /* Transparent Card */
@@ -37,14 +38,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 2.5rem;
     background: rgba(0, 0, 0, 0.5); /* Transparent black */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 90%; /* Wider card */
+    max-width: 1200px;
     width: 90%;
-    margin: 2rem auto; /* Center the card */
-    min-height: 400px; /* Taller card */
+    margin: 0 auto; /* Center the card */
 }
 
 /* Text Styling */
@@ -79,7 +79,11 @@ body {
     transform: translateY(30px); /* Pop-out effect */
 }
 
-
+/* Move Featured Projects Section Up */
+#projects {
+    margin-top: -50px; /* Move the section closer to the hero card */
+    padding-top: 3rem; /* Add spacing for content inside */
+}
 
 /* Projects Section */
 .project-card {
@@ -113,6 +117,8 @@ body {
 .navbar {
     background-color: white !important;
     border-bottom: 1px solid #ddd;
+    padding: 1.5rem 0; /* Make the navbar slightly bigger */
+    font-size: 1.1rem; /* Slightly increase text size */
 }
 
 .navbar .navbar-brand, 
