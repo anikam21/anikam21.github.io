@@ -27,35 +27,49 @@ body, html {
         background-position: 0% 50%;
     }
 }
-
-/* Page Layout */
-header {
-    padding: 1.5rem 0;
-}
-
-h1, h2, p {
-    margin: 0.5rem 0;
-}
-
-section {
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+/* Hero Section */
+.hero-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     border-radius: 10px;
-    margin: 2rem auto;
     padding: 2rem;
-    width: 80%;
-    color: #333; /* Dark text for contrast */
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
+/* Buttons */
+.btn-custom {
+    background-color: #fdbf00;
+    color: black;
+    font-weight: bold;
     border-radius: 5px;
+    padding: 0.5rem 1rem;
 }
 
-button:hover {
-    background-color: #0056b3;
+.btn-custom:hover {
+    background-color: #f29f05;
+    color: white;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #1f1f1f;
+    color: #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }

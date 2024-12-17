@@ -19,71 +19,47 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="animated-bg text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome to My Developer Portfolio</h1>
-            <p class="lead">Hi, I'm Anika Marzia, a software developer specializing in backend development, cloud technologies, and DevOps.</p>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>About Me</h2>
-                <p>
-                    I’m a recent graduate in Electrical Engineering from Toronto Metropolitan University. 
-                    I specialize in backend development, cloud technologies, and DevOps practices. I enjoy solving challenging problems and creating impactful software solutions.
-                </p>
-                <a href="about.html" class="btn btn-primary">Learn More</a>
-            </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/500" alt="Profile Picture" class="img-fluid rounded">
-            </div>
+    <section id="home" class="container text-center">
+        <div class="hero-card text-white">
+            <h1>👋 Hi, I am <strong>Anika Marzia</strong></h1>
+            <p class="lead">A software developer specializing in backend development, cloud technologies, and DevOps.</p>
+            <a href="#about" class="btn btn-custom">About me →</a>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Featured Projects</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Banking Application</h5>
-                            <p class="card-text">A system demonstrating object-oriented programming and state patterns.</p>
-                            <a href="https://github.com/anikam21/banking-app" class="btn btn-primary" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
+    <section id="projects" class="container my-5">
+        <h2 class="text-center text-white mb-4"><strong>Featured</strong> Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <h5>Banking Application</h5>
+                    <p>A system demonstrating object-oriented programming and state patterns.</p>
+                    <a href="https://github.com/anikam21/banking-app" target="_blank">View on GitHub →</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">3D Printing Business App</h5>
-                            <p class="card-text">A Flask-based e-commerce platform for managing a 3D printing business.</p>
-                            <a href="https://github.com/anikam21/3d-printing-app" class="btn btn-primary" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <h5>3D Printing Business App</h5>
+                    <p>A Flask-based e-commerce platform for managing a 3D printing business.</p>
+                    <a href="https://github.com/anikam21/3d-printing-app" target="_blank">View on GitHub →</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Face Detection App</h5>
-                            <p class="card-text">A hackathon project for real-time face detection.</p>
-                            <a href="https://github.com/anikam21/face-detection-app" class="btn btn-primary" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <h5>Face Detection App</h5>
+                    <p>A hackathon project for real-time face detection.</p>
+                    <a href="https://github.com/anikam21/face-detection-app" target="_blank">View on GitHub →</a>
                 </div>
             </div>
         </div>
