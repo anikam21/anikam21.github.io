@@ -6,16 +6,14 @@ body, html {
 }
 
 /* Animated Gradient Background */
-.animated-bg {
+body {
     font-family: Arial, sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color: white;
-    text-align: center;
 }
 
-/* Keyframes for Animation */
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -27,42 +25,32 @@ body, html {
         background-position: 0% 50%;
     }
 }
+
 /* Hero Section */
 .hero-card {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
     border-radius: 10px;
     padding: 2rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Buttons */
-.btn-custom {
-    background-color: #fdbf00;
-    color: black;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-}
-
-.btn-custom:hover {
-    background-color: #f29f05;
     color: white;
+    max-width: 800px;
 }
 
 /* Project Cards */
 .project-card {
-    background-color: #1f1f1f;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
     color: #ddd;
     border-radius: 8px;
     padding: 1.5rem;
     text-align: left;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-card a {
@@ -72,4 +60,15 @@ body, html {
 
 .project-card a:hover {
     text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
 }
