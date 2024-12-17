@@ -6,84 +6,60 @@
     <title>About Me - Anika Marzia</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .hero {
-            background: #333;
-            color: white;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .content-section {
-            padding: 20px;
-            border-radius: 10px;
-            background: #f8f9fa;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Custom CSS -->
 </head>
 <body>
+
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Anika Marzia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Anika Marzia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Learn more about my background, skills, and passions.</p>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section class="container my-5">
-        <div class="content-section">
-            <h2>Who I Am</h2>
-            <p>
-                I’m a recent graduate in Electrical Engineering from Toronto Metropolitan University, 
-                with experience in backend development, cloud technologies, and DevOps practices. 
-                I enjoy solving challenging problems and creating impactful software solutions.
-            </p>
-            <h3>Skills</h3>
-            <ul>
-                <li><strong>Languages:</strong> Python, Java, C++</li>
-                <li><strong>Frameworks:</strong> Flask, TensorFlow</li>
-                <li><strong>Tools:</strong> Docker, GitLab, Kafka, Jenkins</li>
-            </ul>
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4"><strong>About</strong> Me</h2>
+        <div class="row align-items-center">
+            <!-- Left: Image -->
+            <div class="col-md-5 text-center">
+                <img src="images/memoji.jpg" alt="Anika's Avatar" class="img-fluid rounded-circle" style="max-width: 300px;">
+            </div>
+            <!-- Right: Text -->
+            <div class="col-md-7">
+                <p>
+                    Hello! I’m <strong>Anika Marzia</strong>, a passionate software developer with experience in backend development, cloud technologies, and DevOps.
+                </p>
+                <p>
+                    My journey in software development started with a love for problem-solving. I enjoy turning complex ideas into scalable and efficient systems. 
+                    Whether it's creating APIs, managing cloud infrastructure, or automating workflows, I bring dedication and attention to detail to every project.
+                </p>
+                <p>
+                    When I’m not coding, you’ll find me exploring new tech, learning something new, or brainstorming innovative solutions to real-world problems.
+                </p>
+                <a href="index.html#projects" class="btn btn-primary mt-3">View Projects →</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="text-white text-center py-3">
         <p>&copy; 2024 Anika Marzia. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
