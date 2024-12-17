@@ -110,10 +110,8 @@ section {
 
 /* Memoji Styling */
 .memoji-img {
-    display: block; /* Ensures it behaves like a block element */
-    margin: 0 auto 1rem; /* Centers the image and adds space below */
-    max-width: 150px; /* Adjust this to control size */
-    height: auto; /* Keeps the proportions correct */
-    border-radius: 50%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Slightly rounded edges */
 }
+
