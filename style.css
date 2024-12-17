@@ -140,6 +140,16 @@ body {
     align-items: center;
 }
 
+/* Skills Card - Transparent Styling */
+.skills-card {
+    background: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Skills Section Styling */
 #skills {
     background-color: #f8f9fa; /* Light gray background */
@@ -148,9 +158,10 @@ body {
     text-align: center;
 }
 
+/* Title Styling */
 #skills h2, #skills p {
-    color: #333; /* Ensure header and paragraph text are dark */
-    margin-bottom: 1rem;
+    color: #fff; /* White text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 #skills strong {
@@ -158,17 +169,20 @@ body {
     font-weight: bold;
 }
 
+/* Progress Bar Styling */
 .skills-bar {
-    background-color: #e0e0e0; /* Light gray background for bars */
+    background-color: #e0e0e0; /* Light grey background */
     height: 10px;
-    margin: 8px 0;
     border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 .skills-bar-fill {
-    background-color: #2196f3; /* Blue fill for progress */
+    background-color: #2196f3; /* Blue bar */
     height: 100%;
     border-radius: 5px;
+    transition: width 1s ease-in-out; /* Smooth fill animation */
 }
 
 /* For phone responsiveness */
