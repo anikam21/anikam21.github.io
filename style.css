@@ -37,46 +37,46 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem; /* Increase padding */
+    padding: 3rem;
     background: rgba(0, 0, 0, 0.5); /* Transparent black */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 90%; /* Make the card larger */
+    max-width: 90%; /* Wider card */
     width: 90%;
-    margin: 0 auto;
-    min-height: 400px; /* Adjust card height */
+    margin: 2rem auto; /* Center the card */
+    min-height: 400px; /* Taller card */
 }
 
 /* Text Styling */
 .hero-text {
     flex: 1;
     text-align: left;
-    max-width: 50%; /* Restrict text to half the card */
+    max-width: 50%; /* Use half of the card width */
 }
 
 .hero-intro {
-    font-size: 1.5rem; /* Slightly larger intro text */
+    font-size: 1.2rem; 
     margin-bottom: 0.5rem;
 }
 
 .hero-name {
-    font-size: 4rem; /* Larger name */
+    font-size: 3.5rem; /* Larger name */
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .hero-role {
-    font-size: 1.8rem; /* Larger role text */
+    font-size: 1.5rem;
     color: #f8f8f8;
     margin-bottom: 1rem;
 }
 
 /* Memoji Image */
 .memoji-img {
-    max-width: 350px; /* Adjust image size */
+    flex: 1;
+    max-width: 400px; /* Larger image size */
     height: auto;
-    margin-left: 2rem;
-    transform: translateY(20px); /* Add bottom pop-out effect */
+    transform: translateY(30px); /* Pop-out effect */
 }
 
 
