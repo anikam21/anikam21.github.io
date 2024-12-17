@@ -127,3 +127,9 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+/* skills teaser*/
+#skills-teaser {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
