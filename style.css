@@ -26,17 +26,19 @@ body {
     }
 }
 
-/* Hero Section */
+/* Hero Section Styling */
+#home {
+    background-color: #000000; /* Solid black background */
+    color: #ffffff; /* White text for contrast */
+    padding: 3rem 0; /* Add spacing around the hero section */
+    position: relative;
+    overflow: hidden; /* Ensures no scrollbars for positioning */
+}
+
 .hero-card {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 2rem auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 800px;
-    color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 2rem 0;
+    text-align: left;
 }
 
 .btn-primary {
@@ -110,8 +112,11 @@ section {
 
 /* Memoji Styling */
 .memoji-img {
-    max-width: 100%; /* Makes the image responsive */
+    max-width: 350px; /* Adjust size to make it large */
     height: auto;
-    border-radius: 8px; /* Optional: Slightly rounded edges */
+    position: absolute; /* Position it relative to the column */
+    bottom: -30px; /* Pull it out of the bottom */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Fine-tune centering */
+    z-index: 2; /* Ensure it's above other elements */
 }
-
