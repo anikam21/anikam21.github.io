@@ -91,16 +91,18 @@ section {
     padding-bottom: 2rem;
 }
 
+/* Custom Navbar Color */
 .navbar {
-    background-color: #4e154b; /* Deep purple */
+    background: linear-gradient(to right, #4e154b, #ff4971) !important; /* Gradient */
     border-bottom: 2px solid #ff4971; /* Accent line */
 }
 
-.navbar a {
+.navbar .nav-link, .navbar-brand {
     color: #ffffff !important; /* White text */
     transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    color: #ff4971 !important; /* Accent pink on hover */
+.navbar .nav-link:hover {
+    color: #ffd1dc !important; /* Light pink on hover */
 }
+
