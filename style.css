@@ -9,7 +9,6 @@ body, html {
     color: white;
 }
 
-/* Animated Background */
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -18,103 +17,65 @@ body, html {
 
 /* Navbar */
 .navbar {
-    background-color: white !important;
-    padding: 1rem 0;
+    background-color: white;
 }
 
-.navbar .navbar-brand, 
-.navbar .nav-link {
+.navbar .navbar-brand, .navbar .nav-link {
     color: black !important;
     font-weight: bold;
 }
 
-.navbar .nav-link:hover {
-    color: #ff4971 !important;
-}
-
-/* Hero Section */
-.hero {
-    padding: 4rem 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    text-align: center;
-}
-
-/* Search Bar */
-#filter-bar input {
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-}
-
-/* Filter Buttons */
-.filter-buttons button {
-    background-color: #ff4971;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.filter-buttons button:hover {
-    background-color: #e73c7e;
-}
-
-/* Projects Grid */
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
+/* Projects Section */
 .project-card {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem;
-    width: calc(33.33% - 2rem);
-    min-width: 300px;
-    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.project-card h5 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.project-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.project-details h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     font-weight: bold;
+    color: #00f2fe;
 }
 
-.project-tags {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
+.project-details p {
+    font-size: 1rem;
+    color: #f8f9fa;
+    margin-bottom: 0.5rem;
 }
 
 .project-tags span {
     background-color: #00bcd4;
+    color: white;
+    border-radius: 12px;
     padding: 0.3rem 0.8rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    margin-right: 0.5rem;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 /* Footer */
 footer {
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     margin-top: 2rem;
 }
