@@ -47,7 +47,6 @@ body {
     padding: 2rem 0;
 }
 
-/* Transparent Card */
 .hero-card {
     display: flex;
     justify-content: space-between;
@@ -84,103 +83,93 @@ body {
     transform: translateY(10px);
 }
 
+/* Search Bar */
+.search-bar {
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Tags */
+.project-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-tags button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-tags button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
 /* Projects Section */
 #projects {
-    margin-top: 20px;
-    padding-top: 2rem;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     color: white;
-    border-radius: 8px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-.project-card a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.project-card a:hover {
-    color: #ffa500;
-    transform: scale(1.05);
-}
-
-/* Skills Section */
-#skills {
-    padding: 4rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-}
-
-/* Skills Card */
-.skills-card {
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    padding: 2rem;
-    max-width: 1000px;
-    width: 90%;
-    color: white;
-    text-align: center;
-    margin: 2rem auto;
-}
-
-/* Skills Heading */
-.skills-card h2 {
-    font-size: 2.5rem;
+.project-card h5 {
+    font-size: 1.3rem;
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #4facfe;
 }
 
-/* Progress Bars Container */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 2rem;
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Skill Item */
-.skill-item {
-    width: 48%; /* Two-column layout */
-    text-align: left;
-}
-
-.skill-item strong {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-}
-
-/* Progress Bar */
-.skills-bar {
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.skills-bar-fill {
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
-    height: 100%;
-    border-radius: 5px;
-    transition: width 1s ease-in-out;
+.project-card .badge {
+    background-color: #23a6d5;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: white;
 }
 
 /* Footer */
@@ -203,11 +192,15 @@ footer {
         max-width: 100%;
     }
 
-    .skills-card {
-        padding: 1.5rem;
+    .project-tags {
+        flex-direction: column;
     }
 
-    .skills-card strong {
-        text-align: center;
+    .project-card {
+        padding: 1rem;
+    }
+
+    .search-bar {
+        padding: 0 1rem;
     }
 }
