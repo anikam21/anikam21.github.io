@@ -7,6 +7,8 @@
     background: linear-gradient(135deg, #e73c7e, #ee7752);
     color: white;
     padding: 2rem;
+    padding-top: 5rem; /* Space to account for thicker navbar */
+    min-height: calc(100vh - 5rem);
 }
 
 .hero-card {
@@ -21,6 +23,14 @@
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
+    margin-top: -50px; /* Move the card upwards */
+    padding: 2.5rem;   /* Add slight padding for better spacing */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust Remaining Sections */
+section {
+    margin-top: 3rem; /* Reduce top margin for all sections */
 }
 
 /* Left Side Text */
@@ -102,6 +112,9 @@ body, html {
 /* Navbar */
 .navbar {
     background-color: white;
+    padding: 1.5rem 0; /* Increased padding for a thicker navbar */
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navbar .navbar-brand, .navbar .nav-link {
