@@ -2,18 +2,14 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-/* Animated Gradient Background */
-body {
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color: white;
 }
 
+/* Animated Background */
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -23,9 +19,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: white !important;
-    border-bottom: 1px solid #ddd;
-    padding: 1.2rem 0;
-    font-size: 1.1rem;
+    padding: 1rem 0;
 }
 
 .navbar .navbar-brand, 
@@ -39,168 +33,88 @@ body {
 }
 
 /* Hero Section */
-#home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    padding: 2rem 0;
-}
-
-.hero-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.hero-text {
-    flex: 1;
-    text-align: left;
-    max-width: 45%;
-}
-
-.hero-name {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero-role {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.memoji-img {
-    flex: 1;
-    max-width: 300px;
-    height: auto;
-    transform: translateY(10px);
-}
-
-/* Search Bar */
-.search-bar {
-    margin: 2rem auto;
-    max-width: 600px;
+.hero {
+    padding: 4rem 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
     text-align: center;
 }
 
-.search-bar input {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    outline: none;
-}
-
-.search-bar input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Tags */
-.project-tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-.project-tags button {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+/* Search Bar */
+#filter-bar input {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+}
+
+/* Filter Buttons */
+.filter-buttons button {
+    background-color: #ff4971;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
-.project-tags button:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
+.filter-buttons button:hover {
+    background-color: #e73c7e;
 }
 
-/* Projects Section */
-#projects {
-    padding: 2rem 1rem;
-    margin: 2rem auto;
-    max-width: 1200px;
+/* Projects Grid */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .project-card {
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
-    transition: all 0.3s ease;
+    width: calc(33.33% - 2rem);
+    min-width: 300px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h5 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: #4facfe;
 }
 
-.project-card p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
-.project-card .badge {
-    background-color: #23a6d5;
-    margin-right: 0.5rem;
-    padding: 0.4rem 0.7rem;
-    border-radius: 10px;
-    font-size: 0.8rem;
-    color: white;
+.project-tags span {
+    background-color: #00bcd4;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
     margin-top: 2rem;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .hero-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text, .memoji-img {
-        max-width: 100%;
-    }
-
-    .project-tags {
-        flex-direction: column;
-    }
-
-    .project-card {
-        padding: 1rem;
-    }
-
-    .search-bar {
-        padding: 0 1rem;
-    }
 }
