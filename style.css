@@ -3,12 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 85vh;
     /*background: linear-gradient(135deg, #e73c7e, #ee7752);*/
     color: white;
     padding: 2rem;
     padding-top: 5rem; /* Space to account for thicker navbar */
-    min-height: calc(100vh - 5rem);
+    margin-bottom: 2rem; /* Reduce gap between sections */
 }
 
 /* Hero Card */
@@ -16,13 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    max-width: 1200px;
+    max-width: 1100px;
     width: 90%;
-    margin: 2rem auto;
+    margin: 0 auto;
     backdrop-filter: blur(10px); /* Frosted glass effect */
     border: none;
 }
@@ -70,9 +70,9 @@ section {
 
 .memoji-img {
     flex: 0 0 auto;
-    max-width: 300px; /* Increase size */
+    max-width: 400px; /* Increase size */
     position: relative;
-    /*bottom: -40px; /* Move it below the hero card */
+    bottom: -40px; /* Move it below the hero card */
     right: 20px; /* Adjust position to the right */
     transform: translateY(10px); /* Slight upward lift */
     z-index: 1; /* Ensure it appears on top */
