@@ -3,12 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 85vh;
-    /*background: linear-gradient(135deg, #e73c7e, #ee7752);*/
+    min-height: 85vh; /* Adjust height to avoid excess space */
     color: white;
     padding: 2rem;
-    padding-top: 5rem; /* Space to account for thicker navbar */
-    margin-bottom: 2rem; /* Reduce gap between sections */
+    padding-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 /* Hero Card */
@@ -16,14 +15,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 3rem; /* Increase padding */
     background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    max-width: 1100px;
-    width: 90%;
+    width: 95%; /* Increase width */
+    max-width: 1400px; /* Increase maximum width */
     margin: 0 auto;
-    backdrop-filter: blur(10px); /* Frosted glass effect */
+    backdrop-filter: blur(10px);
     border: none;
 }
 
@@ -246,7 +245,7 @@ footer {
 /* General Responsiveness */
 @media (max-width: 1200px) {
     .hero-card {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .hero-text {
@@ -258,7 +257,7 @@ footer {
     .hero-card {
         flex-direction: column;
         text-align: center;
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     .hero-text {
