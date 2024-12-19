@@ -67,12 +67,14 @@ section {
 }
 
 .memoji-img {
+    flex: 0 0 auto;
     max-width: 300px; /* Increase size */
     position: absolute;
     bottom: -40px; /* Move it below the hero card */
     right: 20px; /* Adjust position to the right */
     transform: translateY(10px); /* Slight upward lift */
     z-index: 1; /* Ensure it appears on top */
+    align-self: flex-end;
 }
 
 .btn-primary {
@@ -145,11 +147,11 @@ body, html {
     background: rgba(0, 0, 0, 0.1); /* Transparent background */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 1000px;
+    max-width: 1200px;
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
     backdrop-filter: blur(10px); /* frosted glass effect */
-    border: none; /* Remove any border */
+    border: none; 
 }
 
 .hero-text {
@@ -239,18 +241,48 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
+/* Responsive Adjustments */
+@media (max-width: 992px) {
     .hero-card {
         flex-direction: column;
         text-align: center;
+        padding: 1.5rem;
     }
 
-    .hero-text, .hero-image {
-        max-width: 100%;
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
     }
 
-    .memoji-img {
-        margin-top: 1rem;
+    .hero-avatar {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-avatar {
+        max-width: 200px;
+    }
+
+    .hero-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-avatar {
+        max-width: 150px;
+    }
+
+    .hero-card {
+        padding: 0.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
     }
 }
