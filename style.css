@@ -6,8 +6,8 @@
     min-height: 85vh; /* Adjust height to avoid excess space */
     color: white;
     padding: 2rem;
-    padding-top: 5rem;
-    margin-bottom: 2rem;
+    margin-top: -50px; /* Move the section up */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 /* Hero Card */
@@ -15,15 +15,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem; /* Increase padding */
+    padding: 4rem; /* Increase padding for a larger card */
     background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 95%; /* Increase width */
-    max-width: 1400px; /* Increase maximum width */
-    margin: 0 auto;
-    backdrop-filter: blur(10px);
-    border: none;
+    max-width: 1300px; /* Increase width */
+    width: 90%;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
 }
 
 /* Adjust Remaining Sections */
@@ -68,14 +66,12 @@ section {
 }
 
 .memoji-img {
-    flex: 0 0 auto;
-    max-width: 400px; /* Increase size */
-    position: relative;
-    bottom: -40px; /* Move it below the hero card */
-    right: 20px; /* Adjust position to the right */
-    transform: translateY(10px); /* Slight upward lift */
-    z-index: 1; /* Ensure it appears on top */
-    align-self: flex-end;
+    max-width: 450px; /* Adjust size */
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+    transform: translateY(0);
+    z-index: 1;
 }
 
 .btn-primary {
