@@ -4,28 +4,25 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #e73c7e, #ee7752);
+    /*background: linear-gradient(135deg, #e73c7e, #ee7752);*/
     color: white;
     padding: 2rem;
     padding-top: 5rem; /* Space to account for thicker navbar */
     min-height: calc(100vh - 5rem);
 }
 
+/* Hero Card */
 .hero-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1); /* Transparent background */
-    backdrop-filter: blur(10px); /* Glass effect */
-    border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-top: -50px; /* Move the card upwards */
-    padding: 2.5rem;   /* Add slight padding for better spacing */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Adjust Remaining Sections */
@@ -70,10 +67,12 @@ section {
 }
 
 .memoji-img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%; /* Optional: Add a rounded look */
-    transform: translateY(10px);
+    max-width: 300px; /* Increase size */
+    position: absolute;
+    bottom: -40px; /* Move it below the hero card */
+    right: 20px; /* Adjust position to the right */
+    transform: translateY(10px); /* Slight upward lift */
+    z-index: 1; /* Ensure it appears on top */
 }
 
 .btn-primary {
@@ -127,12 +126,14 @@ body, html {
 }
 
 /* Hero Section */
+/* Hero Section */
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
-    padding: 2rem 0;
+    height: calc(100vh - 100px); /* Full viewport height minus navbar */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
 }
 
 /* Transparent Card */
@@ -141,13 +142,14 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    /*background: rgba(0, 0, 0, 0.5);*/
-    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    background: rgba(0, 0, 0, 0.1); /* Transparent background */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    border: none; /* Remove any border */
 }
 
 .hero-text {
@@ -167,10 +169,12 @@ body, html {
 }
 
 .memoji-img {
-    flex: 1;
-    max-width: 300px;
-    height: auto;
-    transform: translateY(10px);
+    max-width: 450px; /* size of the image*/
+    position: absolute;
+    bottom: -55px; /* Bring it closer to the card */
+    right: 20px; /* Adjust the horizontal position */
+    transform: translateY(0); /* Reset the vertical translation */
+    z-index: 1; /* Ensure it overlaps correctly */
 }
 
 /* Projects Section */
