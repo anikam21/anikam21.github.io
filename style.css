@@ -254,13 +254,13 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    .hero-avatar {
+    .memoji-img {
         max-width: 250px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero-avatar {
+    .memoji-img {
         max-width: 200px;
     }
 
@@ -270,7 +270,7 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .hero-avatar {
+    .memoji-img {
         max-width: 150px;
     }
 
