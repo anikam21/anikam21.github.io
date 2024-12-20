@@ -1,48 +1,50 @@
-/* Hero Section Styling */
 #home {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 85vh; /* Adjust height to avoid excess space */
+    align-items: center; /* Vertically center the card */
+    justify-content: center; /* Horizontally center the card */
+    height: 55vh !important; /* Adjust height to reduce the extra space */
+    /* width of the hero card */
+    padding: 0 !important; 
+    margin: 0 !important; /* Remove any margin */
+    background-size: 400% 400%;
     color: white;
-    padding: 2rem;
-    margin-top: -50px; /* Move the section up */
-    margin-bottom: 0; /* Remove bottom margin */
+    
 }
 
-/* Hero Card */
+section {
+    margin-top: 0 !important; /* Remove extra space above sections */
+    padding: 0 !important;
+}
+
+/* Hero Section Styling */
 .hero-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem; /* Increase padding for a larger card */
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    max-width: 1300px; /* Increase width */
+    padding: 3.5rem;
+    background: rgba(0, 0, 0, 0.1); /* Transparent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
     width: 90%;
-    backdrop-filter: blur(10px); /* Frosted glass effect */
+    margin: 2rem auto;
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    border: none; 
 }
 
-/* Adjust Remaining Sections */
-section {
-    margin-top: 3rem; /* Reduce top margin for all sections */
-}
-
-/* Left Side Text */
 .hero-text {
     flex: 1;
     text-align: left;
-    padding: 1rem;
+    max-width: 58%;
 }
 
 .hero-intro {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .hero-name {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -53,25 +55,26 @@ section {
 }
 
 .hero-desc {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
+
 /* Right Side Image */
 .hero-image {
-    flex: 1;
+    flex: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .memoji-img {
-    max-width: 450px; /* Adjust size */
+    max-width: 500px; /* size of the image*/
     position: absolute;
-    bottom: -40px;
-    right: 20px;
-    transform: translateY(0);
-    z-index: 1;
+    bottom: -60px; /* Bring it closer to the bottom of the card */
+    right: 20px; /* Adjust the horizontal position */
+    transform: translateY(0); /* Reset the vertical translation */
+    z-index: 1; /* Ensure it overlaps correctly */
 }
 
 .btn-primary {
@@ -122,58 +125,6 @@ body, html {
 
 .navbar .nav-link:hover {
     color: #ff4971 !important;
-}
-
-/* Hero Section */
-/* Hero Section */
-#home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px); /* Full viewport height minus navbar */
-    padding: 0; /* Remove any padding */
-    margin: 0; /* Remove any margin */
-}
-
-/* Transparent Card */
-.hero-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.1); /* Transparent background */
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    max-width: 1200px;
-    width: 90%;
-    margin: 2rem auto;
-    backdrop-filter: blur(10px); /* frosted glass effect */
-    border: none; 
-}
-
-.hero-text {
-    flex: 1;
-    text-align: left;
-    max-width: 45%;
-}
-
-.hero-name {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero-role {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.memoji-img {
-    max-width: 450px; /* size of the image*/
-    position: absolute;
-    bottom: -55px; /* Bring it closer to the card */
-    right: 20px; /* Adjust the horizontal position */
-    transform: translateY(0); /* Reset the vertical translation */
-    z-index: 1; /* Ensure it overlaps correctly */
 }
 
 /* Projects Section */
@@ -229,6 +180,133 @@ body, html {
     border-color: #23a6d5;
 }
 
+/* Skills Section */
+#skills-preview {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center the cards */
+    gap: 2rem; /* Add spacing between cards */
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.1); /* Transparent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: none;
+}
+
+/* Flip Card Container */
+.flip-card {
+    background-color: transparent;
+    width: 280px; /* Fixed width for consistent card size */
+    height: 350px; /* Fixed height for consistent card size */
+    perspective: 1000px; /* Adds depth for 3D flip effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Flip Card Front and Back */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.flip-card-front {
+    background-color: #ffffff;
+}
+
+.flip-card-back {
+    background-color: #007bff;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Card Elements */
+.card-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text,
+.card-back-text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.card-back-text {
+    color: white;
+}
+
+/* Subheading and Skills List */
+.card-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #555;
+}
+
+.card-skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.card-skill-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #003f8a;
+}
+
+
 /* Footer */
 footer {
     background: rgba(0, 0, 0, 0.5);
@@ -260,14 +338,6 @@ footer {
         margin-right: 0;
         max-width: 100%;
     }
-
-    .memoji-img {
-        position: static; /* Reset positioning */
-        margin: 1rem auto 0;
-        transform: none; /* Remove any translation */
-        max-width: 250px;
-    }
-}
 
 @media (max-width: 768px) {
     .memoji-img {
