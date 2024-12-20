@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Card Test</title>
+    <style>
+        /* Hero Section Styling */
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 85vh; /* Reduce height slightly */
+            color: white;
+            padding: 2rem;
+            margin-top: -50px; /* Move the section up */
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+
+        /* Hero Card */
+        .hero-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4rem; /* Increase padding for a larger card */
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 1300px; /* Increase width */
+            width: 90%;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+        }
+
+        /* Hero Text */
+        .hero-text {
+            flex: 1;
+            text-align: left;
+            padding: 2rem;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem; /* Make text larger */
+        }
+
+        .hero-text p {
+            font-size: 1.25rem; /* Increase paragraph size */
+        }
+
+        /* Right-Side Image */
+        .memoji-img {
+            max-width: 450px; /* Adjust size */
+            position: absolute;
+            bottom: -40px;
+            right: 20px;
+            transform: translateY(0);
+            z-index: 1;
+        }
+
+        /* Background Animation */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <div class="hero-card">
+            <div class="hero-text">
+                <h1>Test Hero Card</h1>
+                <p>This is a test.</p>
+            </div>
+            <img src="images/memoji_bgrem.png" alt="Memoji Image" class="memoji-img">
+        </div>
+    </section>
+</body>
+</html>
