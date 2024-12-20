@@ -1,215 +1,96 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anika Marzia - Developer Portfolio</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css"> <!-- Custom CSS comes after Bootstrap -->
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anika Marzia - Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anika Marzia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body>
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
 
-
+    <!-- Main Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Navigation Bar -->
+        <nav class="custom-navbar">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#posts" class="nav-link">Posts</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#feed" class="nav-link">Feed</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            </ul>
+        </nav>
 
         <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-card">
-            <!-- Left Side: Text -->
-            <div class="hero-text">
+        <section id="home" class="hero-section">
+            <div class="container text-center text-white">
                 <p class="hero-intro">Hi 👋 I am</p>
                 <h1 class="hero-name">Anika Marzia</h1>
-                <p class="hero-role">Software Developer</p>
-                <p class="hero-desc">
-                    Specializing in backend development, cloud technologies, and DevOps.
-                </p>
-                <a href="about.html" class="btn btn-primary">About me →</a>
-            </div> 
-            <!-- Right Side: Image -->
-            <div class="hero-image">
-                <img src="images/memoji_bgrem.png" alt="Anika's Avatar" class="memoji-img">
+                <p class="hero-role typing-effect"></p>
+                <p class="hero-desc">Specializing in backend development, cloud technologies, and DevOps.</p>
+                <a href="#about" class="btn btn-primary">About Me →</a>
             </div>
-        </div>
-    </section>
-
-
+        </section>
 
         <!-- Skills Section -->
-<section id="skills-preview">
-    <!-- Backend Development Flip Card -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side -->
-            <div class="flip-card-front">
-                <img src="images/backend-icon.png" alt="Backend Icon" class="card-icon">
-                <h4 class="card-title">Backend Development</h4>
-                <p class="card-text">Languages: Python, Java, TypeScript.</p>
-            </div>
-            <!-- Back Side -->
-            <div class="flip-card-back">
-                <h4 class="card-title">Backend Development</h4>
-                <p class="card-back-text">Expertise in building scalable APIs and services.</p>
-                <a href="skills.html#backend" class="btn btn-primary">View More →</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Cloud Technologies Flip Card -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side -->
-            <div class="flip-card-front">
-                <img src="images/cloud-icon.png" alt="Cloud Icon" class="card-icon">
-                <h4 class="card-title">Cloud Technologies</h4>
-                <p class="card-text">Platforms: AWS, Azure, GCP.</p>
-            </div>
-            <!-- Back Side -->
-            <div class="flip-card-back">
-                <h4 class="card-title">Cloud Technologies</h4>
-                <p class="card-back-text">Proficient in cloud deployment and management.</p>
-                <a href="skills.html#cloud" class="btn btn-primary">View More →</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- DevOps Flip Card -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side -->
-            <div class="flip-card-front">
-                <img src="images/devops-icon.png" alt="DevOps Icon" class="card-icon">
-                <h4 class="card-title">DevOps</h4>
-                <p class="card-text">Tools: GitLab CI/CD, Jenkins, Terraform.</p>
-            </div>
-            <!-- Back Side -->
-            <div class="flip-card-back">
-                <h4 class="card-title">DevOps</h4>
-                <p class="card-back-text">Experience in CI/CD pipelines and automation.</p>
-                <a href="skills.html#devops" class="btn btn-primary">View More →</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Machine Learning Flip Card -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side -->
-            <div class="flip-card-front">
-                <img src="images/ml-icon.png" alt="Machine Learning Icon" class="card-icon">
-                <h4 class="card-title">Machine Learning</h4>
-                <p class="card-text">Libraries: TensorFlow, scikit-learn, Pandas.</p>
-            </div>
-            <!-- Back Side -->
-            <div class="flip-card-back">
-                <h4 class="card-title">Machine Learning</h4>
-                <p class="card-back-text">Specialized in predictive modeling and data processing.</p>
-                <a href="skills.html#ml" class="btn btn-primary">View More →</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Additional Skills Flip Card -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side -->
-            <div class="flip-card-front">
-                <img src="images/additional-icon.png" alt="Additional Skills Icon" class="card-icon">
-                <h4 class="card-title">Additional Skills</h4>
-                <p class="card-text">Version Control, Agile Methods.</p>
-            </div>
-            <!-- Back Side -->
-            <div class="flip-card-back">
-                <h4 class="card-title">Additional Skills</h4>
-                <p class="card-back-text">Expertise in Git, GitHub, and collaborative workflows.</p>
-                <a href="skills.html#additional" class="btn btn-primary">View More →</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- APIs & Soft Skills Flip Card -->
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side -->
-            <div class="flip-card-front">
-                <img src="images/apis-icon.png" alt="APIs Icon" class="card-icon">
-                <h4 class="card-title">APIs </h4>
-                <h5 class="card-subtitle">APIs</h5> 
-                <!-- New Subheading -->
-                <ul class="card-skill-list">
-                    <li>RESTful APIs</li>
-                    <li>GraphQL</li>
-                    <li>Teamwork</li>
-                </ul>
-            </div>
-            <!-- Back Side -->
-            <div class="flip-card-back">
-                <h4 class="card-title">APIs</h4>
-                <p class="card-back-text">Proficient in API development and cross-team collaboration.</p>
-                <a href="skills.html#apis" class="btn btn-primary">View More →</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-        <!-- Projects Section -->
-        <section id="projects" class="container my-5">
-            <h2 class="text-center mb-4"><strong>Featured</strong> Projects</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <h5>Banking Application</h5>
-                        <p>A system demonstrating object-oriented programming and state patterns.</p>
-                        <a href="https://github.com/anikam21/banking-app" target="_blank">View on GitHub →</a>
-                    </div>
+        <section id="skills">
+            <h2>Technical Expertise</h2>
+            <p>A glimpse into the areas I specialize in, from backend development to DevOps.</p>
+            <div class="skill-cards-container">
+                <div class="skill-card">
+                    <div class="skill-card-icon">💻</div>
+                    <h3>Languages</h3>
+                    <p>Proficient in Python, Java, and TypeScript for backend and full-stack development.</p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <h5>Flight Tracker</h5>
-                        <p>A real-time flight tracking system that displays live flight information and statuses.</p>
-                        <a href="https://github.com/anikam21/3d-printing-app" target="_blank">View on GitHub →</a>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">☁️</div>
+                    <h3>Platforms</h3>
+                    <p>Experienced with AWS, Azure, and GCP for cloud-based solutions and services.</p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="project-card">
-                        <h5>Face Detection App</h5>
-                        <p>A hackathon project for real-time face detection.</p>
-                        <a href="https://github.com/anikam21/face-detection-app" target="_blank">View on GitHub →</a>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">🔧</div>
+                    <h3>DevOps</h3>
+                    <p>Skilled in GitLab CI/CD, Jenkins, and Terraform for seamless deployments.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>Building ML models using TensorFlow, scikit-learn, and Pandas for data insights.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">🔗</div>
+                    <h3>APIs</h3>
+                    <p>Developing RESTful APIs and GraphQL with a focus on teamwork and collaboration.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon">📂</div>
+                    <h3>Version Control</h3>
+                    <p>Efficient with Git, GitHub, and Agile methodologies for project management.</p>
                 </div>
             </div>
         </section>
         
 
-        <!-- Adding Footer --> 
-        <footer class="text-white text-center py-3">
+        
+
+
+
+        <!-- Footer -->
+        <footer class="text-center py-3 text-white">
             <p>&copy; 2024 Anika Marzia. All Rights Reserved.</p>
         </footer>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
