@@ -7,6 +7,7 @@
     <title>Anika Marzia - Developer Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
@@ -14,31 +15,50 @@
 <body>
     <!-- Particles.js Container -->
     <div id="particles-js"></div>
-
     <!-- Main Content Wrapper -->
     <div class="content-wrapper">
+
+
+
         <!-- Navigation Bar -->
-        <nav class="custom-navbar">
-            <ul class="nav-links">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#posts" class="nav-link">Posts</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#feed" class="nav-link">Feed</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar-container">
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#feed">Feed</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li class="github">
+                    <a href="https://github.com/anikam21" target="_blank">
+                    GitHub
+                    </a>
+                </li>
+                </ul>
+            </nav>
+
+
 
         <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="container text-center text-white">
-                <p class="hero-intro">Hi 👋 I am</p>
-                <h1 class="hero-name">Anika Marzia</h1>
-                <p class="hero-role typing-effect"></p>
-                <p class="hero-desc">Specializing in backend development, cloud technologies, and DevOps.</p>
-                <a href="#about" class="btn btn-primary">About Me →</a>
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="text-content">
+                    <p class="hero-intro">Hi 👋 I am</p>
+                    <h1 class="hero-name">Anika Marzia</h1>
+                    <div class="hero-phrase">
+                        <span class="static-text">I Am Into&nbsp;</span>
+                        <span class="dynamic-text typing-effect"></span>
+                    </div>
+                    <p class="hero-desc">Specializing in backend development, cloud technologies, and DevOps.</p>
+                    <button class="btn-primary">About Me →</button>
+                </div>
+                <div class="memoji">
+                    <img src="your-memoji.png" alt="Memoji of Anika" />
+                </div>
             </div>
-        </section>
+        </div>
 
+
+        
         <!-- Skills Section -->
         <section id="skills">
             <h2>Technical Expertise</h2>

@@ -102,20 +102,17 @@ particlesJS("particles-js", {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const roles = ["Software Developer", "Tech Enthusiast", "Cloud Engineer"];
-    let i = 0;
-    let j = 0;
+    const phrases = ["Python Developent", "Web Development", "Machine Learning", "Cloud Engineering"];    const dynamicText = document.querySelector(".dynamic-text");    let i = 0, j = 0;
     let isDeleting = false;
-
-    const typingEffect = document.querySelector(".hero-role");
+    const typingEffect = document.querySelector(".typing-effect");
 
     function type() {
-        let current = roles[i];
+        let current = phrases[i];
         if (isDeleting) {
             typingEffect.textContent = current.substring(0, j--);
             if (j < 0) {
                 isDeleting = false;
-                i = (i + 1) % roles.length;
+                i = (i + 1) % phrases.length;
             }
         } else {
             typingEffect.textContent = current.substring(0, j++);
@@ -128,6 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     type();
 });
+
+
 
 document.querySelectorAll('.skill-card').forEach((card) => {
     card.addEventListener('mousemove', (e) => {

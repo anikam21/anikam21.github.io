@@ -4,18 +4,6 @@ section {
     padding: 0 !important;
 }
 
-#home {
-    display: flex;
-    align-items: center; /* Vertically center the card */
-    justify-content: center; /* Horizontally center the card */
-    height: 55vh !important; /* Adjust height to reduce the extra space */
-    /* width of the hero card */
-    padding: 0 !important; 
-    margin: 0 !important; /* Remove any margin */
-    background-size: 400% 400%;
-    color: white;
-    
-}
 
 /* Particles.js covers the whole page */
 #particles-js {
@@ -25,9 +13,9 @@ section {
     top: 0;
     left: 0;
     z-index: -1; /* Push behind all content */
-    background: linear-gradient(135deg, #000000, #1c1c1c); /* Dark gradient */
-}
+    background: linear-gradient(135deg, #0b132b, #1c2541, #ff7e5f, #feb47b);
 
+}
 
 /* Content Wrapper styles */
 .content-wrapper {
@@ -35,36 +23,41 @@ section {
     z-index: 2; /* Keep content above particles */
 }
 
-#typed-role {
-    color: #00c8ff; /* Color of typing text */
-}
-
 /* Hero Section Styling */
 .hero-section {
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    padding: 2rem;
+    color: white;
+    height: 100vh; /* Fullscreen */
 }
 
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
 
-.hero-text {
+.text-content {
     flex: 1;
-    text-align: left;
-    max-width: 58%;
+    padding-right: 2rem;
 }
 
 .hero-intro {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    
 }
 
 .hero-name {
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -80,22 +73,28 @@ section {
     margin-bottom: 1.5rem;
 }
 
-/* Right Side Image */
-.hero-image {
-    flex: 0;
+
+.hero-phrase {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif; /* Rounded and bubbly font */
+    font-size: 1.8rem; 
 }
 
-.memoji-img {
-    max-width: 500px; /* size of the image*/
-    position: absolute;
-    bottom: -60px; /* Bring it closer to the bottom of the card */
-    right: 20px; /* Adjust the horizontal position */
-    transform: translateY(0); /* Reset the vertical translation */
-    z-index: 1; /* Ensure it overlaps correctly */
+.static-text {
+    color: #000; /* Black or your preferred static text color */
+    font-weight: bold;
 }
+
+.dynamic-text {
+    color: #FF4500; /* Example dynamic text color */
+    font-weight: bold;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+
 
 .btn-primary {
     background-color: #0756b0;
@@ -120,38 +119,6 @@ body {
     color: white;
     overflow-x: hidden;
 
-
-
-/* Typing Animation */
-.typewriter h1 {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #ffffff;
-    animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    from {
-        border-color: transparent;
-    }
-    to {
-        border-color: #ffffff;
-    }
-}
-
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -159,44 +126,82 @@ body {
 }
 
 /* Navigation Bar Styling */
-.custom-navbar {
+.navbar-container {
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
-    background-color: #1a1a1a; /* Dark background */
-    border-radius: 25px; /* Rounded corners */
-    margin: 2rem auto;
-    max-width: 800px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    width: fit-content;
+    margin: 20px auto;
 }
 
-.nav-links {
+  /* Navbar */
+.navbar {
     list-style: none;
     display: flex;
-    gap: 2rem;
-    margin: 0;
+    align-items: center;
+    gap: 20px;
     padding: 0;
+    margin: 0;
 }
 
-.nav-item {
-    display: inline;
-}
-
-.nav-link {
+  /* Navbar Links */
+.navbar li a {
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #bbb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #00d4ff; /* Highlight color on hover */
+.navbar li a:hover {
+    color: #00aaff;
 }
 
-.nav-link.active {
-    color: #00d4ff;
+  /* GitHub Button */
+.github a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+    background-color: #292929;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.github a:hover {
+    background-color: #333333;
+    color: #00aaff;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.github-btn:hover {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.github-btn i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
 
 /* Skills Section */
 .skill-card {
