@@ -94,6 +94,44 @@ section {
     white-space: nowrap; /* Prevent wrapping */
 }
 
+.memoji {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    background: radial-gradient(circle, #0b132b, #1c2541); /* Dark blue to black gradient */
+    border-radius: 50%; /* Circular shape */
+    padding: 10px; /* Space around the image */
+    border: 5px solid rgba(255, 255, 255, 0.8); /* Light border */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    position: relative; /* Allows positioning of stars */
+    overflow: hidden; /* Ensures stars stay within the circle */
+}
+
+.memoji::before {
+    content: '';
+    position: absolute;
+    width: 150%; /* Covers the circular area */
+    height: 150%;
+    background: radial-gradient(circle at 20% 30%, white, transparent 20%), /* Star 1 */
+      radial-gradient(circle at 80% 70%, white, transparent 10%), /* Star 2 */
+      radial-gradient(circle at 50% 50%, white, transparent 15%), /* Star 3 */
+      radial-gradient(circle at 70% 20%, white, transparent 5%), /* Star 4 */
+      radial-gradient(circle at 30% 80%, white, transparent 8%); /* Star 5 */
+    background-size: cover;
+    opacity: 0.6; /* Makes stars subtle */
+    z-index: 0; /* Places stars behind the memoji */
+}
+
+.memoji img {
+    border-radius: 50%; /* Keeps the image circular */
+    max-width: 100%;
+    height: auto;
+    position: relative; /* Places the memoji above the stars */
+    z-index: 1;
+  }
+  
 
 
 .btn-primary {
