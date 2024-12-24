@@ -52,7 +52,7 @@
                 <p class="hero-desc">
                     Specializing in backend development, cloud technologies, and DevOps.
                 </p>
-                <button class="btn-primary">About Me →</button>
+                <button id="scroll-to-about" class="btn-primary">About Me →</button>
             </div>
             <!-- Right Section: Memoji -->
             <div class="memoji">
@@ -62,10 +62,51 @@
             </div>
         </div>
 
+            <div class="roadmap-container">
+                <svg class="roadmap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 3000">
+                <!-- Starry Path -->
+                <path
+                    d="M100,100 C300,500 900,700 600,1200 S400,2000 700,2800"
+                    stroke="white"
+                    fill="none"
+                    stroke-dasharray="8"
+                    stroke-width="2"
+                />
+            
+                <!-- Stars -->
+                <circle cx="150" cy="200" r="3" class="star" />
+                <circle cx="350" cy="400" r="2" class="star" />
+                <circle cx="600" cy="800" r="4" class="star" />
+                <circle cx="900" cy="1100" r="2" class="star" />
+                <circle cx="400" cy="1500" r="3" class="star" />
+                <circle cx="700" cy="2000" r="4" class="star" />
+                </svg>
+            </div>
+
+        <!-- About Section -->
+
+        <section id="about">
+        <div class="summary-text">
+            <h2>About Me</h2>
+            <p>
+            Hi, I'm Anika Marzia, a dedicated [role or specialty] with a passion for solving real-world problems through 
+            technology. My expertise lies in [specific skills or fields], and I thrive in collaborative environments where 
+            creativity and innovation meet. Whether it’s building applications, developing backend solutions, or exploring 
+            new tools, I aim to create impactful solutions that make a difference.
+            </p>
+        </div>
+        </div>
+    </section>
 
 
 
-        
+
+
+
+
+            
+
+
         <!-- Skills Section -->
         <section id="skills">
             <h2>Technical Expertise</h2>
@@ -105,8 +146,6 @@
         </section>
         
 
-        
-
 
 
         <!-- Footer -->
@@ -114,6 +153,8 @@
             <p>&copy; 2024 Anika Marzia. All Rights Reserved.</p>
         </footer>
     </div>
+
+
 
     <!-- Scripts -->
     <script src="scripts.js"></script>

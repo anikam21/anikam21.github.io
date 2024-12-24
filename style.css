@@ -43,7 +43,6 @@ section {
 
 .text-content {
     flex: 1;
-    padding-right: 2rem;
 }
 
 .hero-intro {
@@ -73,14 +72,13 @@ section {
     margin-bottom: 1.5rem;
 }
 
-
 .hero-phrase {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Nunito', sans-serif; /* Rounded and bubbly font */
-    font-size: 1.8rem; 
+    font-size: 2rem; /* Adjust size for better alignment */
+    text-align: left; /* Ensure it aligns with other text */
+    font-family: 'Nunito', sans-serif; /* Consistent font */
+    margin-top: 1rem; /* Add space above if needed */
+    margin-bottom: 1rem; /* Add space below for better separation */
+    color: #ffffff; /* Match the theme */
 }
 
 .static-text {
@@ -120,9 +118,6 @@ section {
 }
 
 
-
-
-
 .memoji img {
     position: absolute; /* Absolute positioning for precise control */
     max-width: 110%; /* Adjusted size to pop slightly from the black hole */
@@ -132,7 +127,6 @@ section {
     transform: translateX(-50%); /* Perfect horizontal centering */
     z-index: 1; /* Place the memoji behind the border */
 }
-
 
 
 .btn-primary {
@@ -163,6 +157,56 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+/* About Section */
+.roadmap-container {
+    position: relative;
+    width: 100%;
+    height: 3000px;
+    overflow: hidden;
+  }
+  
+  .roadmap {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .star {
+    fill: white;
+    animation: sparkle 2s infinite alternate;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      opacity: 0.5;
+      r: 2;
+    }
+    100% {
+      opacity: 1;
+      r: 3;
+    }
+  }
+.summary-text {
+    flex: 1;
+    margin-left: 2rem;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+}
+
+.summary-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0b132b;
+    font-weight: bold;
+}
+
+.summary-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+
 
 /* Navigation Bar Styling */
 .navbar-container {

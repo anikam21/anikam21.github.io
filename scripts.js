@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 document.querySelectorAll('.skill-card').forEach((card) => {
     card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
@@ -143,3 +142,30 @@ document.querySelectorAll('.skill-card').forEach((card) => {
         card.style.setProperty('--mouse-y', '50%');
     });
 });
+
+// Get references to the roadmap and the #about section
+const roadmapContainer = document.querySelector(".roadmap-container");
+const aboutSection = document.querySelector("#about");
+
+// Function to show the roadmap
+function showRoadmap() {
+    roadmapContainer.style.display = "block"; // Show the roadmap
+    const path = roadmapContainer.querySelector("path");
+    path.style.animation = "dash 2s linear forwards"; // Trigger the animation
+}
+
+// Intersection Observer to monitor when #about is in view
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                showRoadmap(); // Start the roadmap animation when #about is in view
+            }
+        });
+    },
+    { threshold: 0.5 } // Trigger when 50% of the section is visible
+);
+
+// Observe the #about section
+observer.observe(aboutSection);
+
