@@ -158,54 +158,93 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+
+
 /* About Section */
-.roadmap-container {
-    position: relative;
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/* About Card */
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
     width: 100%;
-    height: 3000px;
-    overflow: hidden;
-  }
-  
-  .roadmap {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .star {
-    fill: white;
-    animation: sparkle 2s infinite alternate;
-  }
-  
-  @keyframes sparkle {
-    0% {
-      opacity: 0.5;
-      r: 2;
-    }
-    100% {
-      opacity: 1;
-      r: 3;
-    }
-  }
-.summary-text {
+    background: #1a2238; /* Blue background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left: Image Content */
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
     flex: 1;
-    margin-left: 2rem;
+}
+
+.about-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Right: Text Content */
+.about-text {
+    flex: 2;
+    padding: 20px;
     text-align: left;
-    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 
-.summary-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0b132b;
-    font-weight: bold;
+.about-text h1 {
+    color: #39d353;
+    margin-bottom: 20px;
 }
 
-.summary-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #ddd;
-  }
-  
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ffffffcc;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #ffffffcc;
+}
+
+.about-text ul li::before {
+    content: "✔";
+    color: #39d353;
+    position: absolute;
+    left: 0;
+}
 
 
 /* Navigation Bar Styling */
@@ -303,7 +342,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 60px; /* Adjust this value as needed */
+    padding-top: 40px;
 }
 
 .skills-heading h2 {
