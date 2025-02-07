@@ -255,6 +255,19 @@ header {
     z-index: 2; /* Ensures it doesn't overlap */
 }
 
+/* Navigation Bar Styling */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    width: max-content; /* Ensures it doesn't stretch differently on different pages */
+    max-width: 90%; /* Prevents it from getting too wide */
+    margin: 20px auto;
+}
+
 
 /* About Card Container */
 

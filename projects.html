@@ -4,104 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Anika Marzia</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Settings */
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        /* Particles.js covers the whole page */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Push behind all content */
+            background: linear-gradient(135deg, #0b132b, #1c2541, #ff7e5f, #feb47b);
+        }
+
+        /* Hero Card Container */
+        .hero-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            max-width: 950px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.15); /* Slight transparency */
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+            text-align: center;
+        }
+
+        /* Section Heading */
+        .hero-card h2 {
+            font-size: 2.5rem;
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+
+        .hero-card p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+        }
+
+        /* Project Cards Container */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Individual Project Card */
+        .project-card {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 255, 0, 0.4);
+        }
+
+        .project-card h3 {
+            color: #00ff00;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00aaff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+            color: #00ff00;
+        }
+
+        /* Navbar Styling */
+        .navbar-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #1f1f1f;
+            border-radius: 30px;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar li a:hover {
+            color: #00aaff;
+        }
+
+        /* GitHub Button */
+        .github a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 16px;
+            background-color: #292929;
+            border-radius: 25px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .github a:hover {
+            background-color: #333333;
+            color: #00aaff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-card {
+                max-width: 90%;
+                padding: 30px;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anika Marzia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="particles-js"></div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container mt-5">
-        <h1 class="text-center">Projects</h1>
-        <p class="text-center">A showcase of my recent work and accomplishments.</p>
-        
-        <!-- Search Bar -->
-        <div class="d-flex justify-content-center mb-4">
-            <input type="text" id="project-search" class="form-control w-50" placeholder="Filter projects...">
-        </div>
-        
-        <!-- Tags -->
-        <div class="text-center mb-4">
-            <button class="btn btn-outline-primary btn-sm">React</button>
-            <button class="btn btn-outline-primary btn-sm">Rust</button>
-            <button class="btn btn-outline-primary btn-sm">Tooling</button>
-            <button class="btn btn-outline-primary btn-sm">Svelte</button>
-            <button class="btn btn-outline-primary btn-sm">TypeScript</button>
-        </div>
+    <!-- ✅ Dynamically Load Navbar -->
+    <div id="navbar-placeholder"></div>
 
-        <!-- Project Tiles -->
-        <div class="row">
-            <!-- Banking Application -->
-            <div class="col-md-12 mb-4">
-                <div class="project-card d-flex align-items-center p-3 rounded shadow-sm">
-                    <img src="images/banking.png" alt="Banking Application" class="me-3" width="100" height="100">
-                    <div>
-                        <h5 class="mb-1">Banking Application</h5>
-                        <p class="text-muted mb-2">A system demonstrating object-oriented programming and state patterns.</p>
-                        <span class="badge bg-info text-dark">Java</span>
-                        <span class="badge bg-info text-dark">OOP</span>
-                    </div>
-                </div>
+    <!-- ✅ Projects Section with Hero Card -->
+    <div class="hero-card">
+        <h2>My Projects</h2>
+        <p>Check out some of the cool projects I’ve worked on!</p>
+
+        <!-- ✅ Project Cards -->
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Cloud-Based API</h3>
+                <p>Developed a scalable REST API using Flask and deployed it on AWS Lambda with API Gateway.</p>
+                <a href="https://github.com/anikam21" target="_blank">View on GitHub →</a>
             </div>
 
-            <!-- Flight Tracker -->
-            <div class="col-md-12 mb-4">
-                <div class="project-card d-flex align-items-center p-3 rounded shadow-sm">
-                    <img src="images/flight.png" alt="Flight Tracker" class="me-3" width="100" height="100">
-                    <div>
-                        <h5 class="mb-1">Flight Tracker</h5>
-                        <p class="text-muted mb-2">A real-time flight tracking system that displays live flight information.</p>
-                        <span class="badge bg-info text-dark">React</span>
-                        <span class="badge bg-info text-dark">TypeScript</span>
-                    </div>
-                </div>
+            <div class="project-card">
+                <h3>DevOps Automation</h3>
+                <p>Implemented CI/CD pipelines using GitLab, Docker, and Kubernetes to automate deployment workflows.</p>
+                <a href="https://github.com/anikam21" target="_blank">View on GitHub →</a>
             </div>
 
-            <!-- Face Detection App -->
-            <div class="col-md-12 mb-4">
-                <div class="project-card d-flex align-items-center p-3 rounded shadow-sm">
-                    <img src="images/face.png" alt="Face Detection App" class="me-3" width="100" height="100">
-                    <div>
-                        <h5 class="mb-1">Face Detection App</h5>
-                        <p class="text-muted mb-2">A hackathon project for real-time face detection.</p>
-                        <span class="badge bg-info text-dark">Python</span>
-                        <span class="badge bg-info text-dark">OpenCV</span>
-                    </div>
-                </div>
+            <div class="project-card">
+                <h3>Real-Time Data Processing</h3>
+                <p>Built a Kafka-based event-driven system to process streaming data with Apache Spark.</p>
+                <a href="https://github.com/anikam21" target="_blank">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed this portfolio using HTML, CSS, JavaScript, and Bootstrap.</p>
+                <a href="https://github.com/anikam21" target="_blank">View on GitHub →</a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="text-center text-white py-3 fixed-bottom bg-dark">
-        <p class="mb-0">&copy; 2024 Anika Marzia. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
