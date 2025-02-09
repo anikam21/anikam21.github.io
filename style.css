@@ -13,7 +13,7 @@ section {
     top: 0;
     left: 0;
     z-index: -1; /* Push behind all content */
-    background: linear-gradient(135deg, #0b132b, #1c2541, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
 
 }
 
