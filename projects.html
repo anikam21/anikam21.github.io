@@ -24,7 +24,7 @@
             margin: 20px auto;
             max-width: 800px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            min-height: 200px; /* NEW VALUE - Less space */
+            min-height: 100px; /* NEW VALUE - Less space */
             margin-top: 1px;
             position: relative;
             top: -700px; /* Moves it up */
@@ -42,6 +42,8 @@
             width: 250px;
             border-radius: 10px;
             border: none;
+            position: relative;
+            top: -700px; /* Moves it up */
         }
 
         .filter-btn {
@@ -51,6 +53,8 @@
             padding: 10px 20px;
             border-radius: 10px;
             cursor: pointer;
+            position: relative;
+            top: -700px; /* Moves it up */
         }
 
         .filter-btn.active {
@@ -61,7 +65,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fit projects */
             gap: 20px;
-            padding: 40px;
+            padding: 70px;
             justify-content: center;
         }
 
@@ -73,26 +77,42 @@
             text-align: center;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             position: relative;
-            top: -800px; /* Moves it up */
+            top: -700px; /* Moves it up */
         }
 
         .project-card img {
-            width: 100%;
-            border-radius: 10px;
+        width: 150%; /* Increase the width */
+        max-width: none; /* Prevent automatic width limiting */
+        max-height: 160px; /* Maintain a reasonable height */
+        display: block; /* Avoid unnecessary inline spacing */
+        margin: 0 auto; /* Center horizontally */
+        transform: translateX(-17%); /* Shift left to compensate for increased width */
         }
 
-        .progress-bar {
-            background: #ccc;
-            height: 8px;
-            border-radius: 5px;
-            margin: 10px 0;
+        .project-card h3 {
+    font-size: 1.8rem; /* Increase font size */
+    font-weight: bold;
+    letter-spacing: 1px; /* Spreads letters apart */
+    line-height: 1.4; /* Increases line height */
+    margin-bottom: 10px;
+}
+
+        .project-title {
+        font-size: 1.8rem; /* Adjust font size if needed */
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.4; /* Increase spacing between lines */
+        margin-bottom: 10px; /* Adds spacing below the title */
+        letter-spacing: 1.2px;
+}
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        .progress {
-            height: 100%;
-            background: #00a8cc;
-            border-radius: 5px;
-        }
 
         .read-more {
             background-color: #00a8cc;
@@ -175,13 +195,11 @@
     <!-- Project Cards -->
     <div class="projects-container">
         <div class="project-card">
-            <img src="images/project1.jpg" alt="Project Image">
+            <img src="images/Arduino_Project.jpg" alt="Project Image">
             <div class="card-content">
-                <h3>Cloud-Based API</h3>
+                <h3>Arduino Smart Temperature Control System</h3>
                 <p>Developing scalable microservices for high-performance applications.</p>
-                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                 <div class="card-footer">
-                    <span>Progress: 75%</span>
                     <button class="read-more">View</button>
                 </div>
             </div>
