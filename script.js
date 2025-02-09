@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/navbar.html")  // Absolute path ensures it works on GitHub Pages
+    fetch("navbar.html")  // Absolute path ensures it works on GitHub Pages
         .then(response => {
             if (!response.ok) {
                 throw new Error("Navbar file not found!");
