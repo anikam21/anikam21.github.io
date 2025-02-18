@@ -386,80 +386,87 @@ p {
     background-color: #0056b3;
 }
 
-/* Services Section */
+/* Technical Skills Section */
 #technical-skills {
-    padding: 9rem 0;
+    padding: 7rem 0; /* Reduced padding */
+}
+
+#technical-skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted grid size */
+    gap: 1.5rem; /* Reduced spacing between cards */
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 #technical-skills .all-items {
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
-    text-align: center; 
+    gap: 3rem; /* Adjusted spacing */
+    text-align: center;
 }
 
 #technical-skills .item {
-    flex: 1 1 300px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 3rem;
-    border-radius: 15px;
+    flex: 1 1 280px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2.5rem; /* Reduced padding */
+    border-radius: 12px;
     transition: 0.3s ease-in-out;
-    min-height: 200px;
+    min-height: 180px; /* Reduced card height */
 }
 
+/* Section Title Styling */
 #technical-skills .section-heading {
-    font-size: clamp(2rem, 10vw, 8rem);
+    font-size: clamp(2rem, 5vw, 6rem); /* Reduced size */
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2rem;
     text-align: center;
-    position: relative;
-    margin-bottom: 2rem; /* Reduce from 10rem to 2rem */
+    margin-bottom: 2rem; /* Reduced from 10rem */
 }
 
+/* Card Hover Effect */
 #technical-skills .item:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
 }
 
+/* Icon Styling */
 #technical-skills .icon i {
-    font-size: 6rem;
+    font-size: 4.5rem; /* Reduced icon size */
     color: #4eaddc;
     margin-bottom: 1rem;
 }
 
+/* Heading inside Cards */
 #technical-skills .item-heading {
-    font-size: 2rem;
+    font-size: 1.6rem; /* Reduced font size */
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
+/* Description Text */
 #technical-skills .item-desc {
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Slightly smaller text */
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
-	#technical-skills .all-items {
-		flex-direction: column;
-		text-align: center;
-	}
-	#technical-skills .item .icon {
-		margin: 0 auto;
-		margin-bottom: 1rem;
-	}
-	#technical-skills .item {
-		margin: 2rem 0;
-	}
-	#technical-skills .item:nth-child(1) {
-		background-color: rgb(8 69 241 / 35%);
-	}
-	#technical-skills .item:nth-child(2) {
-		background-color: rgba(0, 255, 115, 0.151);
-	}
-	#technical-skills .item:nth-child(3) {
-		background-color: #cbbef093;
-	}
+    #technical-skills .all-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #technical-skills .item {
+        width: 90%; /* Full width on small screens */
+        margin: 1.5rem auto;
+    }
+
+    #technical-skills .icon {
+        margin-bottom: 1rem;
+    }
 }
 
 /* About Section */
@@ -512,15 +519,18 @@ p {
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
 #about .profile-card p {
     font-size: 1.4rem;
     color: #333;
     margin-bottom: 1.5rem;
 }
+
 #about .name {
     font-size: 1.8rem;
     font-weight: bold;
 }
+
 #about .role {
     font-size: 1.4rem;
     color: #777;
@@ -529,17 +539,21 @@ p {
 /* Right Side (Details) */
 #about .about-text {
     max-width: 600px;
+    text-align: left;
 }
+
 #about .highlight-text {
     font-size: 1.6rem;
     color: #f1eff8;
     font-weight: bold;
 }
+
 #about .title {
     font-size: 3.2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
 #about .description {
     font-size: 1.6rem;
     color: #f6f2f2;
@@ -552,6 +566,7 @@ p {
     display: flex;
     gap: 1.5rem;
 }
+
 #about .btn {
     padding: 1rem 2rem;
     font-size: 1.6rem;
@@ -559,18 +574,22 @@ p {
     text-decoration: none;
     display: inline-block;
 }
+
 #about .primary-btn {
     background: #5924ed;
     color: white;
     border: none;
 }
+
 #about .primary-btn:hover {
     background: #4a1ec7;
 }
+
 #about .secondary-btn {
     border: 2px solid #5924ed;
     color: #5924ed;
 }
+
 #about .secondary-btn:hover {
     background: #5924ed;
     color: white;
