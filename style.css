@@ -440,24 +440,24 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-	#services .all-items {
+	#technical-skills .all-items {
 		flex-direction: column;
 		text-align: center;
 	}
-	#services .item .icon {
+	#technical-skills .item .icon {
 		margin: 0 auto;
 		margin-bottom: 1rem;
 	}
-	#services .item {
+	#technical-skills .item {
 		margin: 2rem 0;
 	}
-	#services .item:nth-child(1) {
+	#technical-skills .item:nth-child(1) {
 		background-color: rgb(8 69 241 / 35%);
 	}
-	#services .item:nth-child(2) {
+	#technical-skills .item:nth-child(2) {
 		background-color: rgba(0, 255, 115, 0.151);
 	}
-	#services .item:nth-child(3) {
+	#technical-skills .item:nth-child(3) {
 		background-color: #cbbef093;
 	}
 }
