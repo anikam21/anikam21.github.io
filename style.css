@@ -479,6 +479,10 @@ p {
     align-items: center;
 }
 
+#about .section-heading{
+    font-family: 'Montserrat', sans-serif;
+}
+
 #about .about-card {
     background: rgba(255, 255, 255, 0.1); /* Transparent white */
     backdrop-filter: blur(15px); /* Frosted glass effect */
@@ -576,22 +580,22 @@ p {
 }
 
 #about .primary-btn {
-    background: #5924ed;
+    background: #0756b0;
     color: white;
     border: none;
 }
 
 #about .primary-btn:hover {
-    background: #4a1ec7;
+    background: #1e6bc4;
 }
 
 #about .secondary-btn {
-    border: 2px solid #5924ed;
-    color: #5924ed;
+    border: 2px solid #0756b0;
+    color: #e6e7e8;
 }
 
 #about .secondary-btn:hover {
-    background: #5924ed;
+    background: #1e6bc4;
     color: white;
 }
 
