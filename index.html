@@ -1,48 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anika Marzia - Developer Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>ANIKA - Portfolio</title>
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Particles.js Background -->
-    <div id="particles-js"></div>
+  <!-- Scroll Top Button -->
+  <div class="scroll-top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+    </svg>
+</div>
+<!-- Navigation -->
+<section id="navigation">
+<div class="nav-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</div>
+</section>
+<div id="nav-content">
+<div class="close-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    </div>
+    <div class="wrapper">
+    <h2 class="section-heading">Menu</h2>
+    <nav>
+    <ul>
+        <li><a data-text="Home" href="./index.html#hero">Home</a></li>
+        <li><a data-text="About" href="./index.html#about">About</a></li>
+        <li><a data-text="Projects" href="./index.html#projects">Projects</a></li>
+        <li><a data-text="Contact" href="./contact.html">Contact</a></li>
+    </ul>
+    </nav>
+</div>
+</div>
 
-    <div id="navbar-placeholder"></div>
+<!-- Particles.js Background -->
+<div id="particles-js"></div>
 
+<!--  Hero Section -->
+<section id="hero">
+<div class="hero-content">
+    <div class="text-content">
+    <p class="hero-intro">Hi 👋 I am</p>
+    <h1 class="hero-name">Anika Marzia</h1>
+    <div class="hero-phrase">
+        <span class="static-text">I Am Into&nbsp;</span>
+        <span class="dynamic-text" id="typing-text"></span>
+    </div>
+    <p class="hero-desc">Specializing in backend development, cloud technologies, and DevOps.</p>
+    <div class="buttons">
+        <a href="#about" class="btn btn-primary">About Me →</a>
+    </div>
+    </div>
+    <div class="memoji">
+        <img src="image/memoji_bgrem.png" alt="Memoji of Anika">
+    </div>
+</div>
 
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <div class="hero-content">
-                <!-- Left Section: Text Content -->
-                <div class="text-content">
-                    <p class="hero-intro">Hi 👋 I am</p>
-                    <h1 class="hero-name">Anika Marzia</h1>
-                    <div class="hero-phrase">
-                        <span class="static-text">I Am Into&nbsp;</span>
-                        <span class="dynamic-text" id="typing-text"></span>
-                    </div>
-                    <p class="hero-desc">
-                        Specializing in backend development, cloud technologies, and DevOps.
-                    </p>
-                    <a href="#about" class="btn btn-primary">About Me →</a>
-                </div>
-                <!-- Right Section: Memoji -->
-                <div class="memoji">
-                    <img src="images/memoji_bgrem.png" alt="Memoji of Anika">
-                </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js" defer></script>
+</section>
+
+<!-- Technical Skills Section -->
+<section id="technical-skills">
+    <div class="container">
+        <h2 class="section-heading" data-outline="Technical Skills">Technical Skills</h2>
+        <div class="all-items">
+            
+            <!-- Backend Development -->
+            <div class="item">
+                <div class="icon"><i class="fa-brands fa-docker"></i></div>
+                <h3 class="item-heading">Backend Development</h3>
+                <p class="item-desc">Experience in containerized applications using Docker and Kubernetes.</p>
             </div>
+
+            <!-- Programming -->
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-code"></i></div>
+                <h3 class="item-heading">Programming</h3>
+                <p class="item-desc">Skilled in Python, Java, JavaScript, C, C++, Ruby, and MATLAB.</p>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div class="item">
+                <div class="icon"><i class="fa-brands fa-aws"></i></div>
+                <h3 class="item-heading">Cloud & DevOps</h3>
+                <p class="item-desc">Experience with AWS, CI/CD, Docker, Jenkins, and Kubernetes.</p>
+            </div>
+
+            <!-- Databases -->
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-database"></i></div>
+                <h3 class="item-heading">Databases</h3>
+                <p class="item-desc">Experienced in SQL, NoSQL, and database optimization.</p>
+            </div>
+
+            <!-- Machine Learning & AI -->
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                <h3 class="item-heading">Machine Learning & AI</h3>
+                <p class="item-desc">Familiar with NumPy, Pandas, TensorFlow, and Scikit-learn.</p>
+            </div>
+
+            <!-- Web Technologies -->
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <h3 class="item-heading">Web Technologies</h3>
+                <p class="item-desc">Experienced in RESTful APIs, Flask, HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <!-- Version Control & CI/CD -->
+            <div class="item">
+                <div class="icon"><i class="fa-brands fa-git-alt"></i></div>
+                <h3 class="item-heading">Version Control & CI/CD</h3>
+                <p class="item-desc">Proficient in Git, GitHub, GitLab, and CI/CD pipelines.</p>
+            </div>
+
+            <!-- Kafka & Elastic Stack -->
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-stream"></i></div>
+                <h3 class="item-heading">Kafka & Elastic Stack</h3>
+                <p class="item-desc">Experience using Kafka for streaming and ELK for logging and monitoring.</p>
+            </div>
+
+            <!-- Automation & Scripting -->
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+                <h3 class="item-heading">Automation & Scripting</h3>
+                <p class="item-desc">Experience with Bash, PowerShell, and StackStorm automation.</p>
+            </div>
+
         </div>
     </div>
+</section>
 
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js" defer></script>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        
+        <!-- About Title (Outside the Card) -->
+        <h2 class="section-heading" data-outline="ABOUT">ABOUT</h2>
+        <div class="about-card">
+            <div class="about-content">
+                
+                <!-- Left Side: Profile Card -->
+                <div class="profile-card">
+                    <img src="images/profile.jpg" alt="Anika Marzia">
+                    <p>
+                        I'm an aspiring software developer passionate about backend development, 
+                        cloud technologies, and automation. I enjoy solving complex problems 
+                        and optimizing workflows.
+                    </p>
+                    <h3 class="name">Anika Marzia</h3>
+                    <p class="role">Software Developer</p>
+                </div>
+
+                <!-- Right Side: About Details -->
+                <div class="about-text">
+                    <p class="highlight-text">Hi! This is Anika</p>
+                    <h2 class="title">Software Developer</h2>
+                    <p class="description">
+                        With a strong background in backend development, cloud technologies, 
+                        and DevOps, I specialize in creating scalable, efficient solutions. 
+                        My expertise includes Python, Java, CI/CD, Kafka, and automation with 
+                        StackStorm. I’m always eager to learn and take on new challenges.
+                    </p>
+                    <div class="buttons">
+                        <a href="resume.pdf" class="btn primary-btn" download>Download Resume</a>
+                        <a href="#contact" class="btn secondary-btn">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+
+
+
+<!-- projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-heading" data-outline="Projects">Projects</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Real Chat</h2>
+            <h3 class="project-sub-title">Online real time chat app.</h3>
+            <p class="project-desc">I made this application for a USA customer. This application is truly Amazing. Here
+              you can chat with your friend
+              constantly inside a secure environment and there will be no information reserved after the end of the
+              session.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Hotel Zaman Website
+            </h2>
+            <h3 class="project-sub-title">A website for hotel zaman.
+            </h3>
+            <p class="project-desc">Hotel zaman is one of the famous hotel in Chittagong. We created their website. The
+              client wanted a clean and smooth
+              design which I was able to provide at the end of the project.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Prinazz Website</h2>
+            <h3 class="project-sub-title">A website for music studio</h3>
+            <p class="project-desc">Piranz is one of the famous music composer in UAE. The challenge was to keep the
+              music environment in the web. It was
+              hard but in the end
+              we provided a good quality website that satisfied the client.</p>
+            <div class="buttons">
+              <a href="#" class="primary-btn">Know More</a>
+              <a href="#" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="container">
+      <footer>
+        <div class="col-1">
+          <div class="logo"><a href="#">
+              <img src="./image/light-logo.svg" alt="">
+            </a></div>
+          <p>A freelance web designer and developer from Chittagong, Bangladesh. I generally make websites that have
+            extraordinary
+            designs and also have a good performance rate. </p>
+        </div>
+        <div class="col-2">
+          <h2 class="column-heading">Important<br>Links</h2>
+          <ul>
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html#Project">Project</a></li>
+            <li><a href="./index.html#testimonial">Testimonial</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2 class="column-heading">Contact<br>Info</h2>
+          <ul>
+            <li><a href="#">Webcifar@gmail.com</a></li>
+            <li><a href="#">+192482354</a></li>
+            <li><a href="#">Chittagong, Bangladesh</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h2 class="column-heading">Social<br>Links</h2>
+          <ul>
+            <li><a href="#">FB</a></li>
+            <li><a href="#">TW</a></li>
+            <li><a href="#">IG</a></li>
+            <li><a href="#">Li</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <section id="copyright">
+    <div class="container">
+      <p> &copy; Copyright 2021 AMY. All right Reserved</p>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
 </body>
+
 </html>
