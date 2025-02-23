@@ -418,8 +418,8 @@ p {
     border-radius: 12px;
     transition: 0.3s ease-in-out;
     min-height: 180px; /* Reduced card height */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle, Clean Border */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft Shadow for Floating Effect */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1); /* Soft glow */
 }
 
 /* Section Title Styling */
