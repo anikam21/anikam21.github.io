@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("✅ JavaScript is running!");
+    console.log("JavaScript is running!");
 
     // Initialize Particles.js
     if (document.getElementById("particles-js")) {
@@ -23,10 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             retina_detect: true
         });
-        console.log("✅ Particles.js Initialized");
+        console.log(" Particles.js Initialized");
     } else {
-        console.error("❌ Particles.js container not found!");
+        console.error(" Particles.js container not found!");
     }
+
 
     // Typing Effect
     const phrases = ["Backend Development", "Cloud Technologies", "DevOps"];
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function typeEffect() {
         if (!typingElement) {
-            console.error("❌ Typing text element not found!");
+            console.error(" Typing text element not found!");
             return;
         }
         if (letterIndex === 0) {
@@ -63,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (typingElement) {
         typeEffect();
-        console.log("✅ Typing Effect Initialized");
+        console.log(" Typing Effect Initialized");
     } else {
-        console.error("❌ Typing text element missing.");
+        console.error(" Typing text element missing.");
     }
 });
 
