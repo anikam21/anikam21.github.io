@@ -69,7 +69,6 @@ p {
 	margin-bottom: 10rem;
 }
 
-
 /* scroll Top/Up Button */
 .scroll-top {
 	z-index: 100;
@@ -463,7 +462,7 @@ p {
 
 /* About Section */
 #about {
-    padding: 5rem 0;
+    padding: 7rem;
     background-color: var(--gradient-bg);
     color: white;
     display: flex;
@@ -473,16 +472,20 @@ p {
 
 #about .section-heading{
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 2rem; /* Decrease gap between title and card */
 }
 
 #about .about-card {
-    background: rgba(255, 255, 255, 0.1); /* Transparent white */
-    backdrop-filter: blur(15px); /* Frosted glass effect */
+    background: #23395d; /* Transparent white */
     border-radius: 12px;
     padding: 4rem;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 1100px;
     margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Same border as technical skills */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1); /* Soft glow */
 }
 
 #about .container {
@@ -501,7 +504,7 @@ p {
 /* Left Side (Profile Card) */
 #about .profile-card {
     background: linear-gradient(135deg, #01061e, #0a1b6f); /* Deep blue gradient */
-    padding: 4rem;
+    padding: 1rem;
     border-radius: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -609,7 +612,7 @@ p {
 
 /* Projects Section */
 #projects {
-	padding: 10rem 0;
+	padding: 30rem 0;
 }
 #projects .item {
 	display: flex;
