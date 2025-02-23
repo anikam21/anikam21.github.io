@@ -774,10 +774,11 @@ p {
 
 /* Footer Section */
 #footer {
-	background: var(--gradient-bg); 
-	color: white;
-	padding: 10rem 0 5rem 0;
+	background: rgba(26, 43, 76, 0.7); /* More transparency */
+    position: relative;
+    z-index: 0;
 }
+
 #footer footer {
 	display: flex;
 	align-items: flex-start;
